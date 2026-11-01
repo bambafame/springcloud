@@ -1,15 +1,2 @@
-spring:
-  application:
-    name: StockService
-
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
-      discovery:
-        enabled: true
-        prefer-ip-address: true
-        instance-id: ${spring.application.name}:${random.value}
-
 server:
   port: 8900
